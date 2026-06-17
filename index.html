@@ -19,6 +19,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
+            background-color: #000; /* Evita flashes brancos enquanto o vídeo carrega */
+            line-height: 0; /* Remove pequenos espaços em branco abaixo do iframe */
         }
     </style>
 </head>
@@ -27,7 +29,16 @@
     <h1>Assista ao Vídeo</h1>
     
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CSiOzwd_ph8?si=4xvztPFro0cpUhZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/CSiOzwd_ph8?si=4xvztPFro0cpUhZM" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
     </div>
 
 </body>
